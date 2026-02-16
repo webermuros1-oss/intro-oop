@@ -8,11 +8,11 @@ public class Book {
     private String writer;
     private double price;
 
-
+    // Empty constructor
     public Book() {
     }
 
-
+    // Getters
     public String getTitle() {
         return title;
     }
@@ -33,7 +33,7 @@ public class Book {
         return price;
     }
 
-
+    // Setters
     public void setTitle(String title) {
         this.title = title;
     }
@@ -54,7 +54,7 @@ public class Book {
         this.price = price;
     }
 
-
+    // Method to print book information
     public void printInfo() {
         System.out.println("======================");
         System.out.println("Título: " + title);
