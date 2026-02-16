@@ -4,9 +4,7 @@ package org.example.book;
 public class Main {
  public static void main(String[] args) {
 
-  // ========== CREATE 5 DIFFERENT BOOKS ==========
 
-  // Book 1
   Book book1 = new Book();
   book1.setTitle("Cien años de soledad");
   book1.setDescription("Obra maestra del realismo mágico");
@@ -14,7 +12,7 @@ public class Main {
   book1.setWriter("Gabriel García Márquez");
   book1.setPrice(15.99);
 
-  // Book 2
+
   Book book2 = new Book();
   book2.setTitle("Don Quijote de la Mancha");
   book2.setDescription("Las aventuras de un hidalgo soñador");
@@ -22,7 +20,7 @@ public class Main {
   book2.setWriter("Miguel de Cervantes");
   book2.setPrice(12.50);
 
-  // Book 3
+
   Book book3 = new Book();
   book3.setTitle("1984");
   book3.setDescription("Distopía sobre un régimen totalitario");
@@ -30,7 +28,7 @@ public class Main {
   book3.setWriter("George Orwell");
   book3.setPrice(14.99);
 
-  // Book 4
+
   Book book4 = new Book();
   book4.setTitle("El Principito");
   book4.setDescription("Fábula poética sobre la amistad y el amor");
@@ -38,7 +36,7 @@ public class Main {
   book4.setWriter("Antoine de Saint-Exupéry");
   book4.setPrice(10.99);
 
-  // Book 5
+
   Book book5 = new Book();
   book5.setTitle("Harry Potter y la Piedra Filosofal");
   book5.setDescription("El inicio de las aventuras del joven mago");
@@ -47,7 +45,7 @@ public class Main {
   book5.setPrice(18.99);
 
 
-  // ========== PRINT ALL 5 BOOKS ==========
+
   System.out.println("\n*** LISTADO DE LOS 5 LIBROS ***\n");
   book1.printInfo();
   book2.printInfo();
@@ -56,7 +54,7 @@ public class Main {
   book5.printInfo();
 
 
-  // ========== MODIFY ALL ATTRIBUTES OF BOOK 3 ==========
+
   System.out.println("\n*** MODIFICANDO EL LIBRO 3 ***\n");
   book3.setTitle("Rebelión en la granja");
   book3.setDescription("Sátira sobre la corrupción del poder");
@@ -65,7 +63,7 @@ public class Main {
   book3.setPrice(11.99);
 
 
-  // ========== PRINT ONLY THE MODIFIED BOOK 3 ==========
+
   System.out.println("\n*** LIBRO 3 DESPUÉS DE MODIFICARLO ***\n");
   book3.printInfo();
  }
