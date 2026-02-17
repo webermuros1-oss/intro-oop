@@ -1,7 +1,7 @@
 package org.example.book;
 
 public class Book {
-    // Private attributes
+
     private String title;
     private String description;
     private String isbn;
@@ -9,59 +9,63 @@ public class Book {
     private double price;
 
 
-    public Book() {
-    }
-
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public String getWriter() {
-        return writer;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-
-    public void setTitle(String title) {
+    public Book(String title, String description, String isbn, String writer, double price) {
         this.title = title;
-    }
-
-    public void setDescription(String description) {
         this.description = description;
-    }
-
-    public void setIsbn(String isbn) {
         this.isbn = isbn;
-    }
-
-    public void setWriter(String writer) {
         this.writer = writer;
-    }
-
-    public void setPrice(double price) {
         this.price = price;
     }
 
 
+    public String getTitle() {
+        return this.title;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public String getIsbn() {
+        return this.isbn;
+    }
+
+    public String getWriter() {
+        return this.writer;
+    }
+
+    public double getPrice() {
+        return this.price;
+    }
+
+
+    public void setTitle(String newTitle) {
+        this.title = newTitle;
+    }
+
+    public void setDescription(String newDescription) {
+        this.description = newDescription;
+    }
+
+    public void setIsbn(String newIsbn) {
+        this.isbn = newIsbn;
+    }
+
+    public void setWriter(String newWriter) {
+        this.writer = newWriter;
+    }
+
+    public void setPrice(double newPrice) {
+        this.price = newPrice;
+    }
+
+
     public void printInfo() {
-        System.out.println("======================");
         System.out.println("Título: " + title);
         System.out.println("Descripción: " + description);
         System.out.println("ISBN: " + isbn);
         System.out.println("Autor: " + writer);
         System.out.println("Precio: $" + price);
-        System.out.println("======================\n");
+
     }
 }
